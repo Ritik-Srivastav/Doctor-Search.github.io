@@ -1,0 +1,153 @@
+body {
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.Blue {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+
+.Blue:hover {
+    background-color: darkblue;
+
+}
+
+.step img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.small-input {
+    width: 150px;
+    height: 30px;
+}
+
+.form {
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.search-content {
+    flex: 1;
+    padding: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 400px;
+    height: 300px;
+    padding-left: 60px;
+}
+
+.steps-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.step {
+    display: inline-block;
+    margin: 50px;
+}
+
+.service-section {
+    display: flex;
+    padding: 20px;
+}
+
+.doctor-image {
+    flex: 1;
+    padding-left: 200px;
+}
+
+.service-text {
+    flex: 2;
+    padding-left: 290px;
+}
+
+ul {
+    list-style: disc;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .search-section {
+        flex-direction: column;
+    }
+
+    .image {
+        display: none;
+    }
+}

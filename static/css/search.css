@@ -1,0 +1,38 @@
+/* Apply styles to the entire page */
+body {
+    background-color: #E6F7FF;
+    /* Light blue background color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Center content vertically */
+}
+
+/* Apply styles to the page title */
+h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Apply styles to the list of doctors */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Apply styles to each list item */
+li {
+    background-color: #fff;
+    /* White background for list items */
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

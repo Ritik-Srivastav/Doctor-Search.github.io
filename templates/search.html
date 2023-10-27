@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/search.css') }}">
+    <style>
+        /* CSS for formatting the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Search Results</h1>
+
+    {% if doctors %}
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Specialization</th>
+            <th>Area</th>
+            <th>Experience</th>
+            <th>Available_Day</th>
+        </tr>
+        {% for doctor in doctors %}
+        <tr>
+            <td>{{ doctor.name }}</td>
+            <td>{{ doctor.specialization }}</td>
+            <td>{{ doctor.area }}</td>
+            <td>{{ doctor.experience }}</td>
+            <td>{{ doctor.day_available }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>
+    <h1>No doctors found.</h1>
+    </p>
+    {% endif %}
+</body>
+
+</html>

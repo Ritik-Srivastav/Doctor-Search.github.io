@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HealthApp</title>
+</head>
+
+<body>
+    <!-- First Section - Navbar -->
+    <header class="navbar" id="top">
+        <div class="logo">HealthApp</div>
+        <nav>
+            <ul>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#second-section">About</a></li>
+                <li><a href="#third-section">Services</a></li>
+                <li class="Blue"><a href="#">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Second Section - Search and Image -->
+    <section class="search-section" id="second-section">
+        <div class="search-content">
+            <h2>Find and Search Your Suitable Doctor's</h2>
+            <h5>Join us and Take Care Of Your Family</h5>
+            <form class="form" method="POST" action="/search">
+                <input type="text" class="small-input" placeholder="Find your Doctor" name="doctor_name">
+                <input type="text" class="small-input" placeholder="Select your area" name="search_area"><br>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div class="image">
+            <img src="{{ url_for('static', filename='Images/Doctor2.png') }}" alt="Your Image">
+        </div>
+    </section>
+
+    <!-- Third Section - Steps and Solutions -->
+    <section class="steps-section" id="third-section">
+        <h2>3 Easy Steps and Get Your Solution</h2>
+        <div class="step">
+            <img src="{{ url_for('static', filename='Images/search.png') }}" alt="Your Image">
+            <p>Find best Doctors</p>
+        </div>
+        <div class="step">
+            <img src="{{ url_for('static', filename='Images/date_range.png') }}" alt="Your Image">
+            <p>Get Appointment</p>
+        </div>
+        <div class="step">
+            <img src="{{ url_for('static', filename='Images/contact_phone.png') }}" alt="Your Image">
+            <p>Happy consultations</p>
+        </div>
+    </section>
+
+    <!-- Fourth Section - Quality Service and Bullet Points -->
+    <section class="service-section">
+        <div class="doctor-image">
+            <img src="{{ url_for('static', filename='Images/Doctor1.png') }}" alt="Your Image">
+            <h2>Dr. Khanna</h2>
+            <p>Cardiologist Specialist</p>
+            <p>5 Year Experience</p>
+        </div>
+
+
+        <div class="service-text">
+            <h2>Best Quality Service with our Experienced Doctors</h2>
+            <ul>
+                <li>Search your specialist online</li>
+                <li>Doctors are available 24*7</li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+
+</html>
